@@ -17,13 +17,13 @@ try:
         print("Final Grade: A")
     elif grade <= 92 and grade >= 90:
         print("Final Grade: A-")
-    elif grade <= 89 and grade >= 87:
+    elif grade < 90 and grade >= 87:
         print("Final Grade: B+")
-    elif grade <= 86 and grade >= 83:
+    elif grade < 87 and grade >= 83:
         print("Final Grade: B")
-    elif grade <= 82 and grade >= 80:
+    elif grade < 83 and grade >= 80:
         print("Final Grade: B-")
-    elif grade <= 79 and grade >= 70:
+    elif grade < 80 and grade >= 70:
         print("Final Grade: C")
     elif grade < 70:
         print("Final Grade: F")
