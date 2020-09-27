@@ -17,7 +17,8 @@ def maxOfThree(a,b,c):
     if a==b and b==c:
         print("The maximum of "+a+" "+b+" "+c+" is: " + a)
 
-while(True):
+counter = 0
+while counter < 5:
     try:
         a = input("Enter the first number: ")  
         x = float(a)
@@ -26,6 +27,7 @@ while(True):
         c = input("Enter the third number: ")
         z = float(c)
         maxOfThree(a,b,c)
+        counter+=1
     except:
             print("Error detected: Please enter numerical inputs only.")
     
