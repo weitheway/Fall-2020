@@ -9,7 +9,7 @@
 def plural(s):
     words = s
     for i in range(len(words)):
-        if words[i].endswith(('oy','ey','ay')):
+        if words[i].endswith(('ay','ey','iy','oy','uy')):
             words[i] = words[i] + "s"
         elif words[i].endswith('y'):
             words[i] = words[i][:-1] + "ies"
