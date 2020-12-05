@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 import re 
 
 run = "1"
-d = {"Sun":0,"Mon":0,"Tue":0,"Wed":0,"Thu":0,"Fri":0,"Sat":0}
 while run == "1":
     # Making sure the input file exists 
     try:
@@ -20,6 +19,7 @@ while run == "1":
         continue
     
     # Count # of occurrence for each day
+    d = {"Sun":0,"Mon":0,"Tue":0,"Wed":0,"Thu":0,"Fri":0,"Sat":0}
     try:
         for line in fhand:
             line = line.rstrip()
